@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:    
 
 jobs:
   deploy:
@@ -17,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20'  # Updated from '16' to '20'
 
       - name: Install frontend dependencies
         run: npm install
